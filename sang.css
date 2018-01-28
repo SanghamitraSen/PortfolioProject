@@ -1,0 +1,157 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+body {
+    font-family: monospace;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+}
+.container {
+	margin:0 auto;
+	max-width: 1157px;
+}
+.logo {
+    width:100px;
+}
+.item1 {
+    grid-area: banner;
+    background: #27ad69;
+}
+.item2 {
+    grid-area: greet;
+    background: red;
+}
+.item3 {
+    grid-area: heading;
+    background: purple;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'greet greet  banner banner banner'
+    'greet greet  heading heading heading';
+    grid-gap: 4px;
+    padding: 0 0 2px 0;
+    margin:0 auto;
+}
+.grid-container div {
+    padding: 20px 0;
+    font-size: 25px;
+}
+.item1 img{
+    max-width: 100%;
+    max-height: 400px;
+}
+.item3 h1{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+.item2 h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.social{
+    color:red;
+}
+img{
+    max-width: 100%;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.line {
+    height: 30px;
+    width: 100%;
+    background-color: #bcbbbb;
+}
+.col-4 {
+	width: 33.3%
+}
+.col-6 {
+	width:50%;
+}
+.col-12 {
+	width:100%;
+}
+.col-6,.col-12 {
+	border:2px solid black;
+}
+.gold{
+    background:gold;
+    font-size: 2.3em;
+    text-align: center;
+}
+.textMiddle {
+    text-align: center;
+    background:#0276c0;
+    justify-content: space-around;
+}
+.textAttention {
+    font-size: 45px;
+    padding:15px;
+    padding-top: 0;
+    padding-bottom:0;
+    margin-top: 0
+}
+.works {
+    height:auto;
+    margin-top: 10px;
+}
+h1,
+h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-weight: 100;
+    font-size: 20px;
+}
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 24px;
+}
+.col-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.creds{
+    text-align: right;
+}
+@media screen and (max-width: 990px) {
+.container {
+    max-width:100%;
+}
+.logo {
+    max-width: 70px;
+}
+.col-4,
+.col-6,.item1,.item2,.item3 {
+    width: 100%;
+}
+}
+@media screen and (max-width: 500px) {
+.item3 h1{
+    padding-top: 12%;
+}
+.creds{
+    text-align: center;
+}
+}
